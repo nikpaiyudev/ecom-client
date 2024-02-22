@@ -1,6 +1,6 @@
 const CartPage = () => {
 
-    return false;
+    return <p>Cart Page</p>;
 };
 
 export default CartPage;

@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "./Button";
 import CategoryButton from "./CategoryButton";
 import IconButton from "./IconButton";

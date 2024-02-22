@@ -1,6 +1,4 @@
 const ForgotPage = () => {
-
-
     return <p>Forgot Page</p>
 };
 

@@ -1,6 +1,5 @@
 const Input = () => {
-
-    return (<p>Hello</p>);
+    return <input />
 };
 
 export default Input;
