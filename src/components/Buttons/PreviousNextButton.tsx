@@ -16,7 +16,7 @@ interface PreviousNextButtonProps {
 const PreviousNextButton = ({ onClickLeft, onClickRight }: PreviousNextButtonProps) => {
 
     const NextContainer = ({ children }: NextContainerProps) => {
-        return (<div className="h-12 w-12 bg-slate-100 cursor-pointer  flex justify-center items-center rounded-full ">
+        return (<div className="h-12 w-12 bg-slate-100 cursor-pointer bg-gray-200  flex justify-center items-center rounded-full ">
             {children}
         </div>);
     }

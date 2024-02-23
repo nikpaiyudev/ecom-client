@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Header = () => {
     return (
-        <header className="h-20 flex justify-between items-center w-full header-logo px-20 max-w-[1500px] m-auto border-b border-black-600">
+        <header className="h-20 flex fixed top-0 z-50 bg-white justify-between items-center w-full header-logo px-20 max-w-[1500px] m-auto border-b border-black-600">
             <div className="flex">
                 <h1 className="text-2xl font-bold">Exclusive</h1>
             </div>

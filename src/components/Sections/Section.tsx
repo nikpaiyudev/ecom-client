@@ -5,7 +5,7 @@ import PreviousNextButton from "../Buttons/PreviousNextButton";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import RenderIf from "../RenderIf";
 
-interface ProductSectionProps {
+interface SectionProps {
     children: JSX.Element;
     heading: string;
     title: string;
@@ -15,9 +15,7 @@ interface ProductSectionProps {
     isNextPreviousRequired?: boolean;
 }
 
-const ProductSection = ({ children, heading, title, isButtonRequired = false, onClick, isNextPreviousRequired = false }: ProductSectionProps) => {
-
-
+const Section = ({ children, heading, title, isButtonRequired = false, onClick, isNextPreviousRequired = false }: SectionProps) => {
 
     return (
         <section className="flex m-20 flex-col border-b pb-20">
@@ -25,14 +23,13 @@ const ProductSection = ({ children, heading, title, isButtonRequired = false, on
                 <div className="h-10 w-5 bg-red-500 rounded"></div>
                 <h6 className="text-red-500 font-medium text-base">{heading}</h6>
             </div>
-            <div className="mt-10 flex justify-between">
+            <div className="mt-10 flex justify-between items-center">
                 <h1 className="text-3xl text-black font-semibold">{title}</h1>
                 <RenderIf isTrue={isNextPreviousRequired}>
                     <PreviousNextButton onClickLeft={() => { }} onClickRight={() => { }} />
                 </RenderIf>
-
             </div>
-            <div className="flex mt-10">
+            <div className="mt-10 flex">
                 {children}
             </div>
             <RenderIf isTrue={isButtonRequired}>
@@ -44,4 +41,4 @@ const ProductSection = ({ children, heading, title, isButtonRequired = false, on
     );
 };
 
-export default ProductSection;
+export default Section;

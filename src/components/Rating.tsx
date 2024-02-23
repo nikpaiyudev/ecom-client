@@ -1,6 +1,8 @@
-const Rating = () => {
+import { Rating as MaterialRating } from "@material-tailwind/react/components/Rating";
 
-    return false;
+
+const Rating = () => {
+    return <MaterialRating value={4} placeholder={'Rating For Product'} readonly={true} />
     
 };
 
