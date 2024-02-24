@@ -13,12 +13,13 @@ interface SectionProps {
     buttonText?: string;
     onClick?: MouseEventHandler<HTMLButtonElement>;
     isNextPreviousRequired?: boolean;
+    isBorderRequired?: boolean;
 }
 
-const Section = ({ children, heading, title, isButtonRequired = false, onClick, isNextPreviousRequired = false }: SectionProps) => {
+const Section = ({ children, isBorderRequired = true, heading, title, isButtonRequired = false, onClick, isNextPreviousRequired = false }: SectionProps) => {
 
     return (
-        <section className="flex m-20 flex-col border-b pb-20">
+        <section className={`flex my-20 flex-col  pb-20 ${isBorderRequired ? 'border-b' : 'border-none'}`}>
             <div className="flex gap-4 items-center">
                 <div className="h-10 w-5 bg-red-500 rounded"></div>
                 <h6 className="text-red-500 font-medium text-base">{heading}</h6>
