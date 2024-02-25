@@ -1,7 +1,9 @@
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
-import  './globals.css';
-const inter = Montserrat({ subsets: ["latin"] });
+import { Nunito_Sans } from "next/font/google";
+import './globals.css';
+const inter = Nunito_Sans({ subsets: ["latin"], weight: '400' });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Header />
       <body className={inter.className}>{children}</body>
+      <Footer />
     </html>
   );
 }
