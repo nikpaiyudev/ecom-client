@@ -2,6 +2,7 @@ import products from "@/assets/productlist";
 import PhotoCard from "@/components/Cards/PhotoCard";
 import CategoryList from "@/components/CategoryList";
 import ProductList from "@/components/ProductList";
+import HeroSection from "@/components/Sections/HeroSection";
 import FlashSaleSection from "@/components/Sections/Section";
 import BestSellingSection from "@/components/Sections/Section";
 import CategorySection from "@/components/Sections/Section";
@@ -14,6 +15,7 @@ const HomePage = () => {
 
     return (
         <>
+            <HeroSection />
             <FlashSaleSection title="Flash Sales" heading="Todays" isButtonRequired={true} isNextPreviousRequired={true}>
                 <ProductList productList={products} />
             </FlashSaleSection>
