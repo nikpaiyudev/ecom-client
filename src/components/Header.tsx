@@ -41,7 +41,6 @@ const Header = () => {
                                     <Link href={'/auth/signup'}>
                                         <IconButton children={<UserIcon className="h-6 w-6" />} hoverIcon={<UserIconSolid className="h-6 w-6" />} onClick={() => { }} />
                                     </Link>
-
                                 </li>
                             </ul>
                         </div>

@@ -1,10 +1,7 @@
 import products from "@/assets/productlist";
 import PhotoCard from "@/components/Cards/PhotoCard";
 import CategoryList from "@/components/CategoryList";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import ProductList from "@/components/ProductList";
-import HeroSection from "@/components/Sections/HeroSection";
 import FlashSaleSection from "@/components/Sections/Section";
 import BestSellingSection from "@/components/Sections/Section";
 import CategorySection from "@/components/Sections/Section";
@@ -16,8 +13,7 @@ import { PhoneIcon, ShieldCheckIcon, TruckIcon } from "@heroicons/react/24/outli
 const HomePage = () => {
 
     return (
-        <div className="max-w-[1440px] m-auto mt-20">
-          
+        <>
             <FlashSaleSection title="Flash Sales" heading="Todays" isButtonRequired={true} isNextPreviousRequired={true}>
                 <ProductList productList={products} />
             </FlashSaleSection>
@@ -55,7 +51,8 @@ const HomePage = () => {
                 <Service title="24/7 Customer Service" description="Free delivery for all orders over $100" icon={<PhoneIcon className="h-7 w-7 text-white" />} />
                 <Service title="Money Back Guarante" description="Free delivery for all orders over $100" icon={<ShieldCheckIcon className="h-7 w-7 text-white" />} />
             </section>
-        </div>
+        </>
+
     );
 };
 

@@ -21,8 +21,8 @@ const SignupPage = () => {
                     <form>
                         <div className="flex flex-col gap-5">
                             <Input size={'lg'} label="Full Name" placeholder="Enter Name" type={'text'} />
-                            <Input size={'lg'} label="Email" placeholder="Enter Email" type={'text'} />
-                            <Input size={'lg'} label="Phone Number" placeholder="Enter Phone Number" type={'text'} />
+                            <Input size={'lg'} label="Email" placeholder="Enter Email" type={'email'} />
+                            <Input size={'lg'} label="Phone Number" placeholder="Enter Phone Number" type={'number'} />
                             <Input size={'lg'} label="Password" placeholder="Enter Phone Number" type={'password'} />
                             <Input size={'lg'} label="Confirm Password" placeholder="Enter Phone Number" type={'password'} />
                         </div>
