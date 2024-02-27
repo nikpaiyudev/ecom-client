@@ -10,7 +10,7 @@ const products: ProductCardProps[] = [
             discountedRate: "$90",
             actualRate: "$100"
         },
-        rating: 4.5
+        rating: 4
     },
     {
         id: "2",
@@ -21,7 +21,7 @@ const products: ProductCardProps[] = [
             discountedRate: "$80",
             actualRate: "$100"
         },
-        rating: 4.2
+        rating: 4
     },
     {
         id: "3",
@@ -32,7 +32,7 @@ const products: ProductCardProps[] = [
             discountedRate: "$85",
             actualRate: "$100"
         },
-        rating: 4.7
+        rating: 4
     },
     {
         id: "4",
@@ -54,7 +54,7 @@ const products: ProductCardProps[] = [
             discountedRate: "$70",
             actualRate: "$100"
         },
-        rating: 4.9
+        rating: 4
     },
     {
         id: "6",
@@ -65,7 +65,7 @@ const products: ProductCardProps[] = [
             discountedRate: "$95",
             actualRate: "$100"
         },
-        rating: 4.3
+        rating: 4
     },
     {
         id: "7",
@@ -76,7 +76,7 @@ const products: ProductCardProps[] = [
             discountedRate: "$88",
             actualRate: "$100"
         },
-        rating: 4.6
+        rating: 4
     },
     {
         id: "8",
@@ -87,7 +87,7 @@ const products: ProductCardProps[] = [
             discountedRate: "$82",
             actualRate: "$100"
         },
-        rating: 4.8
+        rating: 4
     },
     {
         id: "9",
@@ -98,7 +98,7 @@ const products: ProductCardProps[] = [
             discountedRate: "$78",
             actualRate: "$100"
         },
-        rating: 4.1
+        rating: 4
     },
     {
         id: "10",
@@ -109,7 +109,7 @@ const products: ProductCardProps[] = [
             discountedRate: "$92",
             actualRate: "$100"
         },
-        rating: 4.4
+        rating: 4
     }
 ];
 

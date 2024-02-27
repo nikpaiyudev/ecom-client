@@ -1,9 +1,10 @@
-import { Rating as MaterialRating } from "@material-tailwind/react/components/Rating";
+import { Rating as MaterialRating, RatingProps } from "@material-tailwind/react/components/Rating";
 
+interface MaterialRatingProps extends RatingProps { }
 
-const Rating = () => {
-    return <MaterialRating value={4} placeholder={'Rating For Product'} readonly={true} />
-    
+const Rating = ({ value }: MaterialRatingProps) => {
+    return <MaterialRating value={value} placeholder={'Rating For Product'} readonly={true} />
+
 };
 
 export default Rating;

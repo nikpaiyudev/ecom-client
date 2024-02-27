@@ -14,7 +14,7 @@ const Footer = () => {
 
     return (
         <footer className="w-full bg-black text-white py-20">
-            <div className="max-w-[1440px] grid grid-cols-5 gap-4 m-auto">
+            <div className="container grid grid-cols-5 gap-4 m-auto">
                 <FooterItem title="Exclusive">
                     <div className="flex flex-col">
                         <span className="text-lg">Subscribe</span>

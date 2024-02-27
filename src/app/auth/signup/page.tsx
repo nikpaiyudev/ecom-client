@@ -8,11 +8,11 @@ import Link from "next/link";
 
 const SignupPage = () => {
     return (
-        <section className="flex w-full mt-20">
+        <section className="flex w-full">
             <div className="flex-1 flex">
                 <Image src={'/assets/img/signup.png'} width={805} height={781} alt={'signup'} />
             </div>
-            <div className="flex-1 flex flex-col justify-center items-center gap-10 w-full">
+            <div className="flex-1 flex flex-col pt-40 pb-20 justify-center items-center gap-10 w-full">
                 <div className="w-[350px] flex flex-col gap-10">
                     <div className="flex w-full flex-col gap-3">
                         <h1 className="text-3xl font-medium">Create Your Account</h1>
@@ -23,8 +23,8 @@ const SignupPage = () => {
                             <Input size={'lg'} label="Full Name" placeholder="Enter Name" type={'text'} />
                             <Input size={'lg'} label="Email" placeholder="Enter Email" type={'email'} />
                             <Input size={'lg'} label="Phone Number" placeholder="Enter Phone Number" type={'number'} />
-                            <Input size={'lg'} label="Password" placeholder="Enter Phone Number" type={'password'} />
-                            <Input size={'lg'} label="Confirm Password" placeholder="Enter Phone Number" type={'password'} />
+                            <Input size={'lg'} label="Password" placeholder="Enter Password" type={'password'} />
+                            <Input size={'lg'} label="Confirm Password" placeholder="Confirm Password" type={'password'} />
                         </div>
                         <PrimaryButton className="mt-5 w-full " onClick={() => { }}><>Create Account</></PrimaryButton>
                         <Button

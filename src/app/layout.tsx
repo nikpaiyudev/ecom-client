@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import './globals.css';
-const inter = Nunito_Sans({ subsets: ["latin"], weight: '400' });
+const inter = Nunito_Sans({ subsets: ["latin"], weight: ['400', '200', '300', '500', '600', '700', '800', '900', '1000'] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <div className="max-w-[1440px] m-auto">{children}      </div>
+        <div className="container mx-auto mt-40 mb-20">{children}      </div>
         <Footer />
       </body>
     </html>

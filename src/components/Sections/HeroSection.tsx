@@ -7,9 +7,9 @@ import SideMenuPanel from "../SideMenuPanel";
 const HeroSection = () => {
 
     return (
-        <section className="pt-10 flex flex-row h-full justify-center items-center">
+        <section className="flex flex-row h-full justify-center items-center">
             <SideMenuPanel listItems={sideMenuListItems} />
-            <div className="h-full  pl-20 flex flex-grow ">
+            <div className="h-full   flex flex-grow ">
                 <div className="bg-black w-[100%] justify-center items-center  p-10 h-full flex text-white">
                     <div className="flex flex-1 flex-col gap-10">
                         <div className="flex gap-3 items-center">
