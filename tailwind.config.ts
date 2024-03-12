@@ -1,8 +1,7 @@
 import { url } from "inspector";
-import type { Config } from "tailwindcss";
 const withMT = require("@material-tailwind/react/utils/withMT");
 // import './public/assets/img/'
-const config: Config = withMT({
+const config = withMT({
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",

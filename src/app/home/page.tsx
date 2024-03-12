@@ -1,4 +1,5 @@
-import products from "@/assets/productlist";
+
+import products from "@/assets/constants/productlist";
 import PhotoCard from "@/components/Cards/PhotoCard";
 import CategoryList from "@/components/CategoryList";
 import ProductList from "@/components/ProductList";

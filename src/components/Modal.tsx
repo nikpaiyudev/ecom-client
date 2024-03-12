@@ -6,7 +6,7 @@ import {
     DialogFooter,
 } from "@material-tailwind/react";
 import { size } from "@material-tailwind/react/types/components/dialog";
-import RenderIf from "./RenderIf";
+
 
 interface ModalProps {
     dialogHeader: string;

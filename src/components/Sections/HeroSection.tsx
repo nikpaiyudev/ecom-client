@@ -1,4 +1,5 @@
-import sideMenuListItems from "@/assets/side-menu";
+
+import sideMenuListItems from "@/assets/constants/side-menu";
 import { FireIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";

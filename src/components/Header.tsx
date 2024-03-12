@@ -38,7 +38,10 @@ const Header = () => {
 
                                 </li>
                                 <li>
-                                    <IconButton children={<ShoppingCartIcon className="h-6 w-6" />} hoverIcon={<ShoppingIconSolid className="h-6 w-6" />} onClick={() => { }} />
+                                    <Link href={'/cart'}>
+                                        <IconButton children={<ShoppingCartIcon className="h-6 w-6" />} hoverIcon={<ShoppingIconSolid className="h-6 w-6" />} onClick={() => { }} />
+                                    </Link>
+
                                 </li>
                                 <li>
                                     <Link href={'/auth/signup'}>

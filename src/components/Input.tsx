@@ -8,10 +8,11 @@ interface MaterialInputProps extends InputProps {
     value?: any;
     type: HTMLInputTypeAttribute;
     size?: size;
+    disabled?: boolean
 }
 
-const Input = ({ label, placeholder, value, type, size = 'md' }: MaterialInputProps) => {
-    return <MaterialInput size={size} label={label} placeholder={placeholder} crossOrigin value={value} type={type} />
+const Input = ({ label, placeholder, value, type, size = 'md', disabled }: MaterialInputProps) => {
+    return <MaterialInput disabled={disabled} size={size} label={label} placeholder={placeholder} crossOrigin value={value} type={type} />
 };
 
 export default Input;
