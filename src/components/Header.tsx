@@ -15,7 +15,7 @@ const Header = () => {
             <header className="h-20 flex w-full fixed top-0 z-50 bg-white  border-b border-black-600">
                 <div className="container flex justify-between items-center m-auto">
                     <div className="flex">
-                        <h1 className="text-2xl font-bold">Exclusive</h1>
+                        <h1 className="text-2xl font-bold text-red-500">Exclusive</h1>
                     </div>
                     <div className="flex">
                         <ul className="flex gap-10 text-base items-center justify-center">

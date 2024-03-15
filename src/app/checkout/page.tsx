@@ -1,17 +1,26 @@
 "use client";
 
-import CheckoutBillingForm from "@/components/CheckoutBillingForm";
-import CheckoutProductDetails from "@/components/CheckoutProductDetails";
+import CheckoutForm from "@/components/Checkout/CheckoutForm";
+import CheckoutProductDetails from "@/components/Checkout/CheckoutProductDetails";
+import CheckoutDelivery from "@/components/Checkout/CheckoutDelivery";
+import CheckoutContact from "@/components/Checkout/CheckoutContact";
 
 const CheckoutPage = () => {
     return (
-        <div className="flex flex-col">
-            <h1 className="text-3xl mb-10">Billing Details</h1>
-            <div className="flex">
-                <CheckoutBillingForm />
-                <CheckoutProductDetails />
+        <section className="flex flex-col ">
+            <h1 className={'text-3xl text-bold mb-10'}>Checkout</h1>
+            <div className={'flex gap-20'}>
+                <div className={'flex flex-1 flex-col gap-5'}>
+                    <CheckoutContact/>
+                    <CheckoutForm/>
+                    <CheckoutDelivery/>
+                </div>
+                <div className={'flex-1'}>
+                    <CheckoutProductDetails/>
+                </div>
             </div>
-        </div>
+
+        </section>
     );
 };
 

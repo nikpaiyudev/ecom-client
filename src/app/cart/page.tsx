@@ -6,6 +6,7 @@ import { TrashIcon } from "@heroicons/react/24/outline";
 import { TrashIcon as TrashSolidIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/navigation";
 import { useCallback } from "react";
+import Card from "@/components/Cards/Card";
 
 const cartHeaders = ['Action', 'Product', 'Price', 'Quantity', , 'Subtotal'];
 
@@ -20,20 +21,23 @@ const CartPage = () => {
     }, []);
 
     return (
-        <div className="flex flex-col">
-            <h1 className="text-3xl mb-10">Your Cart (2)</h1>
-            <table className="w-full min-w-max table-auto text-left">
-                <thead>
+        <Card title={'Your Cart'}>
+            <div className="flex flex-col">
+                <h1 className="text-3xl text-black mb-10">Your Cart (2)</h1>
+                <table className="w-full min-w-max table-auto text-left">
+                    <thead>
                     <tr>
                         {
-                            cartHeaders.map((header, index) => <th key={index} className={tableHeaderClasses}>{header}</th>)
+                            cartHeaders.map((header, index) => <th key={index}
+                                                                   className={tableHeaderClasses}>{header}</th>)
                         }
                     </tr>
-                </thead>
-                <tbody>
+                    </thead>
+                    <tbody>
                     <tr>
                         <td className={`${tableDataclasses}`}>
-                            <IconButton children={<TrashIcon className="h-6 w-6" />} hoverIcon={<TrashSolidIcon className="h-6 w-6 text-red-400" />} />
+                            <IconButton children={<TrashIcon className="h-6 w-6"/>}
+                                        hoverIcon={<TrashSolidIcon className="h-6 w-6 text-red-400"/>}/>
                         </td>
                         <td className={`${tableDataclasses}`}>LCD Monitor</td>
                         <td className={`${tableDataclasses}`}>$650</td>
@@ -46,12 +50,15 @@ const CartPage = () => {
                         <td className={`${tableDataclasses} font-bold`} colSpan={4}>SUB TOTAL</td>
                         <td className={`${tableDataclasses} subtotal-total font-bold`}>1200</td>
                     </tr>
-                </tbody>
-            </table>
-            <div className="flex justify-end mt-10">
-                <PrimaryButton onClick={navigateToCheckout}><>Proceed To Checkout</></PrimaryButton>
+                    </tbody>
+                </table>
+                <div className="flex justify-end mt-10">
+                    <PrimaryButton onClick={navigateToCheckout}><>Proceed To Checkout</>
+                    </PrimaryButton>
+                </div>
             </div>
-        </div>
+        </Card>
+
     );
 };
 

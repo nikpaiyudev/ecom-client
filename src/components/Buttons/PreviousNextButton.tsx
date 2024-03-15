@@ -16,7 +16,7 @@ interface PreviousNextButtonProps {
 const PreviousNextButton = ({ onClickLeft, onClickRight }: PreviousNextButtonProps) => {
 
     const NextContainer = ({ children }: NextContainerProps) => {
-        return (<div className="h-12 w-12 bg-slate-100 cursor-pointer bg-gray-200  flex justify-center items-center rounded-full ">
+        return (<div className="h-12 w-12 bg-slate-100 cursor-pointer bg-white  flex justify-center items-center rounded-full ">
             {children}
         </div>);
     }
@@ -25,7 +25,6 @@ const PreviousNextButton = ({ onClickLeft, onClickRight }: PreviousNextButtonPro
         <div className="flex gap-3">
             <NextContainer ><IconButton children={<ArrowLeftSolidIcon className="h-6 w-6" />} hoverIcon={<ArrowLeftIcon onClick={onClickLeft} className="h-6 w-6" />}  /></NextContainer>
             <NextContainer><IconButton children={<ArrowRightSolidIcon className="h-6 w-6" />} hoverIcon={<ArrowRightIcon onClick={onClickRight} className="h-6 w-6" />}  /></NextContainer>
-
         </div>
     );
 };

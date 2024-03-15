@@ -18,13 +18,13 @@ const HomePage = () => {
         <>
             <HeroSection />
             <FlashSaleSection title="Flash Sales" heading="Todays" isButtonRequired={true} isNextPreviousRequired={true}>
-                <ProductList productList={products} />
+                <ProductList productList={products} isGrid={true} />
             </FlashSaleSection>
             <CategorySection title="Browse By Category" heading="Categories" isButtonRequired={false} isNextPreviousRequired={false}>
                 <CategoryList />
             </CategorySection>
             <BestSellingSection title="Best Selling Products" heading="This Month" isButtonRequired={true} isNextPreviousRequired={true}>
-                <ProductList productList={products} />
+                <ProductList productList={products} isGrid={true} />
             </BestSellingSection>
             <ExploreOurSection title="Explore Our Products" heading="Our Products" isButtonRequired={false} isNextPreviousRequired={false}>
                 <ProductList productList={products} isGrid={true} />

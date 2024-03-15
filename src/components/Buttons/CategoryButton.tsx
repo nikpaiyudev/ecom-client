@@ -22,7 +22,7 @@ const CategoryButton = ({ title, icon, hoverIcon }: CategoryButtonProps) => {
     }
 
     return (
-        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={`border border-[#cccccc] flex justify-center flex-col rounded cursor-pointer gap-4 items-center  h-[140px] hover:bg-red-500`}>
+        <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={` bg-white flex justify-center flex-col rounded cursor-pointer gap-4 items-center  h-[140px] hover:bg-red-500`}>
             <RenderIf isTrue={isHovered}>
                 {hoverIcon}
             </RenderIf>
