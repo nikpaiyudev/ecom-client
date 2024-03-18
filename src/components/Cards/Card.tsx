@@ -8,8 +8,9 @@ interface CardProps {
 
 const Card = ({title , children , className}:CardProps) => {
     return (
-        <MaterialCard  placeholder={title}>
+        <MaterialCard className={'w-full'} placeholder={title}>
             <CardBody className={className} placeholder={title}>
+                <h1 className={'text-black text-xl font-bold mb-5'}>{title}</h1>
                 {children}
             </CardBody>
         </MaterialCard>

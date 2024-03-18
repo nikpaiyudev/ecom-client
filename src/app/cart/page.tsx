@@ -21,9 +21,8 @@ const CartPage = () => {
     }, []);
 
     return (
-        <Card title={'Your Cart'}>
+        <Card title={'Your Cart (2)'}>
             <div className="flex flex-col">
-                <h1 className="text-3xl text-black mb-10">Your Cart (2)</h1>
                 <table className="w-full min-w-max table-auto text-left">
                     <thead>
                     <tr>

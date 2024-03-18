@@ -3,12 +3,10 @@
 import { HeartIcon, TrashIcon } from "@heroicons/react/24/outline";
 import { HeartIcon as HeartSolidIcon, TrashIcon as TrashSolidIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import { useState } from "react";
 import Button from "../Buttons/Button";
 import IconButton from "../Buttons/IconButton";
 import Rating from "../Rating";
 import RenderIf from "../RenderIf";
-import {useCallback} from "react";
 import {Card, CardBody} from "@material-tailwind/react";
 
 export interface ProductCardProps {

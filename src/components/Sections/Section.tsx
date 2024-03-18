@@ -4,6 +4,7 @@ import { MouseEventHandler } from "react";
 import PreviousNextButton from "../Buttons/PreviousNextButton";
 import PrimaryButton from "../Buttons/PrimaryButton";
 import RenderIf from "../RenderIf";
+import Button from "@/components/Buttons/Button";
 
 interface SectionProps {
     children: JSX.Element;
@@ -35,7 +36,7 @@ const Section = ({ children, isBorderRequired = true, heading, title, isButtonRe
             </div>
             <RenderIf isTrue={isButtonRequired}>
                 <div className="w-full flex justify-center items-center mt-16">
-                    <PrimaryButton onClick={onClick}><>View All Products</></PrimaryButton>
+                    <Button onClick={onClick} variant={'outlined'}><>View All Products</></Button>
                 </div>
             </RenderIf>
         </section>

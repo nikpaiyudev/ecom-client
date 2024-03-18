@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import type { Metadata } from "next";
 import { Nunito_Sans } from "next/font/google";
 import './globals.css';
+import React from "react";
 const inter = Nunito_Sans({ subsets: ["latin"], weight: ['400', '200', '300', '500', '600', '700', '800', '900', '1000'] });
 
 export const metadata: Metadata = {

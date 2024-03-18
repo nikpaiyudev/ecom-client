@@ -20,7 +20,7 @@ const Header = () => {
                     <div className="flex">
                         <ul className="flex gap-10 text-base items-center justify-center">
                             <li><Link href='/'>Home</Link></li>
-                            <li><Link href='/contact'>Contact</Link></li>
+                            <li><Link href='/contact-us'>Contact</Link></li>
                             <li><Link href='/about'>About</Link></li>
                             <li><Link href='/about'>Categories</Link></li>
                         </ul>
